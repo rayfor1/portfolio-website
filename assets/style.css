@@ -1,0 +1,85 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    padding:  100px;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(banner.jpeg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: white;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+
+.banner h3{
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    line-height: 1.5em;   
+}
+
+.btn{
+    position: relative;
+    background: #2196F3;
+    display: inline-block;
+    color: white;
+    margin-top: 20 px;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500px;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0px 15px;
+    color: white;
+    text-decoration: none;
+
+}
