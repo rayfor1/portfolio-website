@@ -136,3 +136,29 @@ img{
     display: flex;
     justify-content: right;
 }
+
+.services{
+    background: white;
+}
+
+.heading.white{
+    color: white;
+}
+
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* .services .content .contentBox{
+    padding: 50px 25px;
+    margin: 20px;
+    background: #222;
+    color: white;
+    max-width: 340px;
+    text-align: center;
+    transition: 0.5px;
+
+} */
