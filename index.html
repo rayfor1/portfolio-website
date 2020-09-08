@@ -28,7 +28,7 @@
     <section class= "about">
         <div class= "heading"></div>
             <h2>About Me</h2>
-        <div class= "content"></div>    
+        <div class= "content">    
             <div class= "contentBox">
                 <h3>I'm a Full Stack Developer</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit libero porro similique magnam est temporibus illum asperiores ad, et, maxime praesentium totam. Impedit dolore quis unde dolores soluta. Provident, dolore!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, veritatis delectus consectetur ea aut fuga velit vero ducimus sint voluptas perferendis voluptatem dolorum consequatur ab, harum aliquid reprehenderit sed eius.
@@ -37,6 +37,14 @@
             <div class= "w50">
                 <img src= "https://picsum.photos/200/300" class= "img">
             </div>
+        </div>
     </section>
+    <script type= "text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        });
+
+    </script>
 </body>
 </html>

@@ -13,7 +13,8 @@ section{
 .banner{
     position: relative;
     min-height: 100vh;
-    background: url(banner.jpeg);
+    /* background: url(banner.jpeg); */
+    background-color: lightblue;
     background-size: cover;
     background-position: right;
     display: flex;
@@ -60,6 +61,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: white;
+    padding: 20px, 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 header .logo{
@@ -70,9 +78,18 @@ header .logo{
     letter-spacing: 2px;
 }
 
+header.sticky .logo{
+    color: black;
+}
+
 header ul{
     position: relative;
     display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
 }
 
 header ul li a{
@@ -83,6 +100,9 @@ header ul li a{
     text-decoration: none;
 }
 
+header.sticky ul li a{
+    color: black;
+}
 .heading{
     width: 100%;
     text-align: center;
@@ -99,7 +119,9 @@ header ul li a{
     display: flex;
     justify-content: space-between;
 }
-
+.contentBox{
+    padding-right: 30px;
+}
 .contentBox h3{
     font-size: 25px;
     margin-bottom: 10px;
@@ -110,5 +132,7 @@ header ul li a{
 }
 
 img{
-    max-width: 100%
+    max-width: 100%;
+    display: flex;
+    justify-content: right;
 }
