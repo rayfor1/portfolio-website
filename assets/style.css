@@ -138,7 +138,7 @@ img{
 }
 
 .services{
-    background: white;
+    background: black;
 }
 
 .heading.white{
@@ -152,7 +152,7 @@ img{
     flex-direction: row;
 }
 
-/* .services .content .contentBox{
+.services .content .servicesBox{
     padding: 50px 25px;
     margin: 20px;
     background: #222;
@@ -161,4 +161,19 @@ img{
     text-align: center;
     transition: 0.5px;
 
-} */
+}
+
+.services .content .servicesBox img{
+    justify-content: space-around;
+    max-width: 80px;
+    filter: invert(1)
+}
+
+.services .content .servicesBox:hover{
+    background: #2196f3
+}
+
+.services .content .servicesBox h2{
+    font-size: 20px;
+    font-weight: 1000;
+}
