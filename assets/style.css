@@ -23,10 +23,11 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 150px, 50px, 100px;
 }
 
 .banner h2{
-    font-size: 3em;
+    font-size: 2.0em;
     color: white;
     font-weight: 700;
     line-height: 1.5em;
@@ -34,7 +35,7 @@ section{
 
 
 .banner h3{
-    font-size: 2em;
+    font-size: 1.2em;
     color: white;
     font-weight: 500;
     line-height: 1.5em;   
@@ -45,11 +46,11 @@ section{
     background: #2196F3;
     display: inline-block;
     color: white;
-    margin-top: 20 px;
+    margin-top: 10 px;
     padding: 10px 20px;
     font-size: 15px;
     text-transform: uppercase;
-    letter-spacing: 0px;
+    letter-spacing: 0.5px;
     font-weight: 500px;
     border: 1px solid white;
     border-color: honeydew;
@@ -117,7 +118,9 @@ header.sticky ul li a{
 
 .heading h2{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
 }
 
 .content{
@@ -128,7 +131,7 @@ header.sticky ul li a{
     padding-right: 30px;
 }
 .contentBox h3{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -301,7 +304,7 @@ img{
     .menu{
         position: fixed;
         top: 70px;
-        left: 0;
+        left: -100%;
         display: block;
         padding: 100px, 50px;
         text-align: center;
@@ -312,9 +315,15 @@ img{
         z-index: 999; 
         border-top: 1px solid rgba(0,0,0,0.1)
     }
+
+    .menu.active{
+        left: 0;
+    }
     
     header ul li a{
         color: black;
+        font-size: 25px;
+        margin: 10px;
     }
 
     .toggle{
@@ -325,5 +334,24 @@ img{
         background-repeat: no-repeat;
         background-size: 30px;
         cursor: pointer;
+    }
+
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background: url(close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+
+    section{
+        padding: 100px 50px;
+
     }
 }

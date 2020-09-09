@@ -10,7 +10,7 @@
 <body>
     <header>
         <a href= "#" class= "logo">Portfolio</a>
-        <div class= "toggle"></div>
+        <div class= "toggle" onclick= "toggleMenuBtn()"></div>
             <ul class= "menu">
                 <li><a href= "#home">Home</a></li>
                 <li><a href= "#about">About</a></li>
@@ -27,8 +27,9 @@
         </div>
     </section>
     <section class= "about" id= "about">
-        <div class= "heading"></div>
+        <div class= "heading">
             <h2>About Me</h2>
+        </div>
         <div class= "content">    
             <div class= "contentBox">
                 <h3>I'm a Full Stack Developer</h3>
@@ -62,7 +63,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, necessitatibus sapiente possimus, similique quisquam expedita fugit corporis aut dolores accusantium aliquid quos nemo architecto tempore iste quis repellendus. Exercitationem, inventore.</p>
             </div>
             <div class= "servicesBox">
-                <img src= "assets/mobileapp.png">
+                <img src= "assets/mobileapp2.png">
                 <h2>Mobile App Deisgn</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, necessitatibus sapiente possimus, similique quisquam expedita fugit corporis aut dolores accusantium aliquid quos nemo architecto tempore iste quis repellendus. Exercitationem, inventore.</p>
             </div>
@@ -165,7 +166,9 @@
 
         function toggleMenuBtn(){
             var menuBtn = document.querySelector(".toggle");
+            var menuList = document.querySelector(".menu");
             menuBtn.classList.toggle("active")
+            menuList.classList.toggle("active")
         }
     </script>
 </body>
