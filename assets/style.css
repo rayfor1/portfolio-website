@@ -14,7 +14,7 @@ section{
     position: relative;
     min-height: 100vh;
     /* background: url(banner.jpeg); */
-    background-color: lightblue;
+    background-color: #2196f3;
     background-size: cover;
     background-position: right;
     display: flex;
@@ -48,6 +48,8 @@ section{
     text-transform: uppercase;
     letter-spacing: 0px;
     font-weight: 500px;
+    border: 1px solid white;
+    border-color: honeydew;
 
 }
 
@@ -75,7 +77,7 @@ header .logo{
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 header.sticky .logo{
@@ -197,3 +199,91 @@ img{
     justify-content: center;
 }
 
+.contact{
+    background: black
+}
+
+.formBox{
+    min-width: 65%;
+}
+
+.formBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox form h3, .contactInfo{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.formBox form input, .formBox form input textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 15px; 
+    background: transparent;
+    background: rgb(54, 54, 54);
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.formBox form textarea{
+    min-height: 200px;
+}
+
+.formBox form input::placeholder
+.formBox form textarea::placeholder{
+    color: grey;
+}
+
+.formBox form input[type= "submit"]{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.contactInfo{
+    min-width: 40%;
+}
+
+.contactInfoBox{
+    position: relative;
+}
+
+.contactInfoBox .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBox .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.contactInfoBox .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+    color: white;
+    flex-direction: column;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.contactInfoBox .box .text h3{
+    color: #2196f3;
+    margin-bottom: 0px;
+    font-weight: 500
+}
