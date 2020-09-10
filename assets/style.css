@@ -189,7 +189,7 @@ img{
 
 .projects .content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -197,19 +197,19 @@ img{
     width: 50%;
     padding: 20px;
     text-align: center ;
-}
-/* 
+} 
+
 .projects .content .projectsBox img{
     max-width: 60%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-}
+} 
 
 .projects .content .projectsBox a {
     justify-content: center;
-} */
+} 
 
 .contact{
     background: black
@@ -301,6 +301,7 @@ img{
     font-weight: 500
 }
 
+/* Responsive Design: */
 @media (max-width: 990px)
 {
     header,
@@ -377,4 +378,4 @@ img{
     section{
         padding: 100px 20px;
     }
-}
+} 
