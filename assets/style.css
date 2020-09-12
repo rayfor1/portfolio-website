@@ -13,6 +13,7 @@ section{
     padding:  100px;
 }
 
+/* banner */
 .banner{
     position: relative;
     min-height: 100vh;
@@ -57,6 +58,8 @@ section{
 
 }
 
+
+/* header */
 header{
     position: fixed;
     top: 0;
@@ -146,6 +149,7 @@ img{
     justify-content: right;
 }
 
+/* services */
 .services{
     background: black;
 }
@@ -169,7 +173,6 @@ img{
     max-width: 340px;
     text-align: center;
     transition: 0.5px;
-
 }
 
 .services .content .servicesBox img{
@@ -187,6 +190,7 @@ img{
     font-weight: 1000;
 }
 
+/* projects */
 .projects .content{
     display: flex;
     justify-content: space-evenly;
@@ -211,6 +215,7 @@ img{
     justify-content: center;
 } 
 
+/* contacts */
 .contact{
     background: black
 }
@@ -378,4 +383,4 @@ img{
     section{
         padding: 100px 20px;
     }
-} 
+}
