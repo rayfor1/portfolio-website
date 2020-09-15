@@ -129,7 +129,7 @@ header.sticky ul li a{
 .content{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
 }
 .contentBox{
     padding-right: 30px;
@@ -141,12 +141,14 @@ header.sticky ul li a{
 
 .w50{
     min-width: 50%;
+    justify-content: center;
 }
 
 img{
     max-width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    padding-left: 50px;
 }
 
 /* services */
