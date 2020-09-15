@@ -183,6 +183,12 @@ img{
     filter: invert(1)
 }
 
+.services .content .servicesBox sevicecsimg{
+    justify-content: center;
+    max-width: 80px;
+    filter: invert(1)
+}
+
 .services .content .servicesBox:hover{
     background: #2196f3
 }
@@ -205,7 +211,7 @@ img{
     text-align: center ;
 } 
 
-.projects .content .projectsBox img{
+.projects .content .projectsBox .pic{
     max-width: 60%;
     display: flex;
     justify-content: center;
